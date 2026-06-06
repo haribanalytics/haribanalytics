@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harib Analytics | AI-Driven Dashboards & Enterprise Apps</title>
+    <style>
+        /* Minimalist Modern Reset & Variables */
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --accent-blue: #38bdf8;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+        }
+
+        .logo span {
+            color: var(--accent-blue);
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Hero Section */
+        header {
+            padding: 8rem 5% 6rem;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        h1 span {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-blue);
+            color: var(--bg-dark);
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        /* Portfolio/Services Section */
+        .container {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--accent-blue);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--bg-card);
+            padding: 4rem 5%;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .contact p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Harib<span>Analytics</span></div>
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Intelligent Dashboards.<br><span>Automated Engineering.</span></h1>
+        <p class="hero-p">We design and deploy high-performance HTML5 dashboards and enterprise web apps engineered via cutting-edge AI pipelines.</p>
+        <a href="#contact" class="btn">Build Your Solution</a>
+    </header>
+
+    <!-- Services Grid -->
+    <section class="container" id="services">
+        <h2>Our Core Capabilities</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>HTML5 Dashboards</h3>
+                <p>Ultra-fast, responsive interactive control panels built to display your business metrics beautifully across all client hardware platforms.</p>
+            </div>
+            <div class="card">
+                <h3>AI-Driven Development</h3>
+                <p>Accelerated deployment pipelines utilizing autonomous agents to draft cleaner, robust, error-free web infrastructures at scale.</p>
+            </div>
+            <div class="card">
+                <h3>Custom Data Applications</h3>
+                <p>Tailored lightweight business apps designed specifically around your unique workflow, reducing operational friction overnight.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Call to Action -->
+    <section class="contact" id="contact">
+        <h2>Ready to scale your interface?</h2>
+        <p>Get in touch to deploy tailored corporate dashboard solutions tailored precisely to your operational data needs.</p>
+        <a href="mailto:your-email@example.com" class="btn">Email Executive Briefing</a>
+    </section>
+
+    <!-- Corporate Footer -->
+    <footer>
+        <p>&copy; 2026 Harib Analytics. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
